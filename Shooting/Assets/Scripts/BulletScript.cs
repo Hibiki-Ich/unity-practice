@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class BulletScript : MonoBehaviour{
@@ -17,10 +18,12 @@ public class BulletScript : MonoBehaviour{
             //BulletPrefabはインスペクターから選択
             //座標はGunからZ軸方向（Gunのローカル座標）へ、0.3進んだところ（グローバル座標）
             Vector3 posi = PlayerGun.transform.position;
-            Debug.Log(posi);
+            //Debug.Log(posi);
             posi.z += 0.3f;
-            Debug.Log(posi);
+            //Debug.Log(posi);
             GameObject bullet = GameObject.Instantiate(BulletPrefab, posi, Quaternion.identity);
+            //前（インスタンス化の時に初期方向は変更できる）に向かって初速を付ける。
+            bullet.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 50);
         }
     }
 }

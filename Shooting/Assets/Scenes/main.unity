@@ -249,6 +249,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e28298e9169b74ceaa748a35818c3ea7, type: 3}
+--- !u!1 &198807147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5103335290772949978, guid: e28298e9169b74ceaa748a35818c3ea7, type: 3}
+  m_PrefabInstance: {fileID: 198807146}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &299249067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -409,7 +414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 946808584}
-  - component: {fileID: 946808583}
+  - component: {fileID: 946808585}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -417,19 +422,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &946808583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 946808582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 301981d408994403b97e4902d6f75e7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BulletPrefab: {fileID: 5103335290772949978, guid: e28298e9169b74ceaa748a35818c3ea7, type: 3}
 --- !u!4 &946808584
 Transform:
   m_ObjectHideFlags: 0
@@ -445,6 +437,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &946808585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946808582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301981d408994403b97e4902d6f75e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BulletPrefab: {fileID: 198807147}
+  PlayerGun: {fileID: 1889420966}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +554,10 @@ PrefabInstance:
     - target: {fileID: 1751373781787131594, guid: b51c5fc5bcc9c4422b45d87f064bec15, type: 3}
       propertyPath: m_Name
       value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1751373781787131594, guid: b51c5fc5bcc9c4422b45d87f064bec15, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6453987547766472853, guid: b51c5fc5bcc9c4422b45d87f064bec15, type: 3}
       propertyPath: m_LocalPosition.x

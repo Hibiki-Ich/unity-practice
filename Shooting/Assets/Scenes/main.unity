@@ -425,7 +425,7 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1889420975}
   m_SourcePrefab: {fileID: 100100000, guid: b51c5fc5bcc9c4422b45d87f064bec15, type: 3}
---- !u!1001 &1372974559
+--- !u!1001 &1848894540
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -475,7 +475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3206880327359489772, guid: 3a0ad67177e354cb4a089bfa2eb9ad5b, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Enemy (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -616,4 +616,4 @@ SceneRoots:
   - {fileID: 1984163803}
   - {fileID: 1299380903}
   - {fileID: 946808584}
-  - {fileID: 1372974559}
+  - {fileID: 1848894540}

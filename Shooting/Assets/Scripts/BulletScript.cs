@@ -8,7 +8,7 @@ public class BulletScript : MonoBehaviour{
     //インスペクターからGunをアタッチする。Gunを削除した時にペタペタ貼り直す必要があるので非推奨
     public GameObject PlayerGun;
     void Start(){
-        
+        //Debug.Log("Bullet Script Start!");
     }
 
     // Update is called once per frame

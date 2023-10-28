@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class PlayerControll : MonoBehaviour{
     // Start is called before the first frame update
+    private GameObject PlayerGun;
     void Start(){
-        
+        PlayerGun = GameObject.FindWithTag("player");
     }
 
     // Update is called once per frame

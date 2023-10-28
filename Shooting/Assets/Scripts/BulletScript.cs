@@ -6,9 +6,10 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour{
     public GameObject BulletPrefab;
     //インスペクターからGunをアタッチする。Gunを削除した時にペタペタ貼り直す必要があるので非推奨
-    public GameObject PlayerGun;
+    private GameObject PlayerGun;
     void Start(){
         //Debug.Log("Bullet Script Start!");
+        PlayerGun = GameObject.Find("Gun");
     }
 
     // Update is called once per frame

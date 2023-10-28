@@ -262,7 +262,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 5103335290772949978, guid: e28298e9169b74ceaa748a35818c3ea7, type: 3}
-  PlayerGun: {fileID: 1889420966}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class BulletScript : MonoBehaviour{
     private GameObject PlayerGun;
     void Start(){
         //Debug.Log("Bullet Script Start!");
-        PlayerGun = GameObject.Find("Gun");
+        PlayerGun = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame

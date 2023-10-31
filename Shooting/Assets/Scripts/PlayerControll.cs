@@ -10,7 +10,6 @@ public class PlayerControll : MonoBehaviour{
         PlayerGun = GameObject.FindWithTag("Player");
     }
 
-    // Update is called once per frame
     void Update(){
         if(Input.GetKey(KeyCode.A)){
             PlayerGun.transform.Translate(-0.06f, 0, 0);

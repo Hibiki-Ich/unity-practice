@@ -4,7 +4,6 @@ using UnityEngine;
 //using UnityEngine.Windows;
 
 public class PlayerControll : MonoBehaviour{
-    // Start is called before the first frame update
     private GameObject PlayerGun;
     void Start(){
         PlayerGun = GameObject.FindWithTag("Player");
